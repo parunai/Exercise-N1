@@ -12,7 +12,7 @@ app.get('/db', function (request, response) {
       if (err) {
         console.error("An error occurred on the server. Error: " + err);
       } else {
-        response.render('pages/db', { rows: result.rows });
+        response.render('pages/db', { results: result.rows });
       }
     });
   });
